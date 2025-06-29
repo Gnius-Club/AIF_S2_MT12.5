@@ -1,24 +1,288 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 12.5 : El Mundo Detallado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 12.5 : El Mundo Detallado</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Practicar la composición visual y el 'set dressing'.</li>
+                                        <li>Poblar una escena de escape room con al menos 10 objetos temáticos para crear una composición rica y creíble.</li>
+                                        <li>Utilizar la disposición de objetos para apoyar la narrativa (narrativa ambiental).</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Contextualización del 'set dressing'.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Introducción a la narrativa ambiental.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Adquisición conceptual sobre cómo los objetos cuentan historias y guían al jugador.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Aplicación práctica de poblar y componer la escena.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Retroalimentación estructurada entre pares sobre las 'viñetas' narrativas creadas.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>La escena de la escape room de la Misión 12, ahora poblada con al menos 10 assets temáticos de la librería, dispuestos de forma intencional para crear 'viñetas' de narrativa ambiental.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a Delightex con las escenas de la Misión 12 guardadas.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que la librería de assets de Delightex esté funcionando correctamente.</li>
+                                                <li>Preparar ejemplos visuales de buen 'set dressing' si se considera necesario.</li>
+                                                <li>Tener lista la presentación de diapositivas.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Repasar los conceptos de 'narrativa ambiental', 'viñetas', 'agrupaciones' y 'líneas visuales' para guiar a los estudiantes.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de trabajo profesional y contextualizar la misión como un ejercicio de decoración de escenarios o 'set dressing'.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la misión: los detalles hacen la historia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Arquitectos. Tienen un escenario. Tiene atmósfera, pero está vacío. Una habitación vacía no cuenta una historia. Los detalles son los que la hacen creíble. Hoy, se convierten en decoradores de escenarios o 'set dressers'. Su misión es poblar su mundo con objetos que refuercen la narrativa y hagan que el espacio se sienta vivido... o abandonado."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Activen su sesión de trabajo con Xolo para la Misión 12.5, siguiendo el protocolo estándar."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar la narrativa ambiental como una forma de contar historias sin palabras.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto de 'set dressing' y la narrativa ambiental.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Esta es una sesión de práctica extendida sobre composición y narrativa ambiental. El 'set dressing' es el arte de colocar objetos en una escena no solo para que se vea bonita, sino para contar una historia y guiar al jugador. Un libro abierto sobre un escritorio sugiere que alguien estuvo aquí recientemente. Una silla volcada sugiere un conflicto. Cada objeto es una palabra."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán afirmar con total propiedad: <strong>'Yo puedo poblar un entorno 3D con assets temáticos para crear una composición visual rica y narrativamente coherente.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 10 minutos</h2>
+                <p>Guiar a los estudiantes para que aprendan los principios de la narrativa ambiental y la composición visual.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo iniciar su diálogo de dirección de arte con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Entramos al A.I. GYM. Para poblar su mundo con intención, necesitan la guía de un director de arte. Consulten a Xolo con el siguiente comando: <strong>'Xolo, como mi director de arte, explícame los principios de narrativa ambiental y composición visual para 'set dressing'.'</strong> Él les explicará cómo cada objeto cuenta una historia y cómo usar agrupaciones y líneas visuales para guiar la mirada del jugador."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
+                <p>Supervisar el workflow de seleccionar, colocar y componer los assets para poblar la escape room.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Poblando la Habitación ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los equipos seleccionan y colocan al menos 10 objetos temáticos en su escena.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Inicia el Brain Spark. Tomen su escenario construido y abran la librería de Delightex. Su misión es seleccionar y colocar al menos 10 objetos que encajen con el tema y la narrativa de su GDD. Pregúntense constantemente: ¿Qué historia cuenta este objeto? ¿Apoya el puzzle que diseñé?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ajuste Fino y Composición ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los equipos ajustan la colocación de los objetos y buscan la coherencia visual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"La precisión es clave para la credibilidad. Presten atención a la escala, rotación y posición de cada objeto. Nada debe flotar o atravesar paredes. Si ven su escena desordenada, consulten a Xolo sobre cómo crear agrupaciones y líneas visuales. Descríbanle una sección de su escena y pídanle consejo sobre cómo organizarla con intención."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar una fase de retroalimentación estructurada sobre las 'viñetas' de narrativa ambiental creadas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una breve reflexión para identificar la composición más exitosa.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Tiempo. Reflexión individual. Hagan un recorrido mental por su escena. Elijan la 'viñeta' o el rincón del que se sientan más orgullosos, esa pequeña composición de 3 o 4 objetos que cuenta una historia por sí misma. ¿Qué historia es?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Intercambio en Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) En parejas, los estudiantes presentan su 'viñeta' narrativa favorita.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"En parejas. Muestren a su compañero únicamente la 'viñeta' de la que están más orgullosos. Expliquen qué objetos la componen y qué mini-historia están contando con su disposición. El compañero observa y prepara su feedback."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador provee una estructura para el feedback sobre narrativa ambiental.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para dar feedback, usen esta estructura: <strong>1. 'La historia que cuenta tu viñeta es muy clara, especialmente por...' 2. 'La composición funciona bien porque mi vista se dirige hacia...' 3. 'Una pregunta que tengo sobre esos objetos es...'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador concluye la sesión, declarando completa la fase de construcción del entorno.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy han aprendido el arte de la narrativa ambiental. Sus mundos ahora no solo tienen una atmósfera, sino también una historia implícita en cada detalle. Han transformado un espacio en un lugar. Ahora que sus escenarios están completos y detallados, estamos listos para implementar la lógica de juego avanzada. Excelente trabajo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
